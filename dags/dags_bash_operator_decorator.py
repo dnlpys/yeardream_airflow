@@ -5,7 +5,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.empty import EmptyOperator
 from airflow.decorators import dag
 
-@dag(dag_id="dags_bash_operator",
+@dag(dag_id="dags_bash_operator_decorator",
      start_date=datetime.datetime(2023, 3, 1, tz="Asia/Seoul"),
      schedule="0 13 * * 5#2",
      catchup=False,
